@@ -1,0 +1,65 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 64px 0 0 0;
+}
+
+.title {
+  width: 1;
+  font-weight: 700;
+  font-size: 24px;
+  display: flex;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.formRowContainerOne {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 6%;
+  margin-top: 24px;
+}
+
+.formRowContainerTwo {
+  composes: formRowContainerOne;
+  grid-template-columns: 1fr 1fr;
+}
+
+.formRowContainerThree {
+  composes: formRowContainerOne;
+}
+
+.inputContainer {
+  width: 100%;
+}
+
+.input, .inputLabel {
+  width: 100%;
+}
+
+.inputLabel {
+  text-align: left;
+  font-weight: bold;
+  font-size: 12px;
+  color: #808080;
+  margin-bottom: 8px;
+}
+
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  padding: 12px 16px;
+  color: #4A4A4A;
+  border-radius: 4px;
+  border: 1px solid #4A4A4A;
+}
+
+.inputSelect {
+  composes: input;
+  cursor: pointer;
+}

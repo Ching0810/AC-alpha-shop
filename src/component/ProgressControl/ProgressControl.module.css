@@ -1,0 +1,63 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  width: 1;
+  font-weight: bolder;
+  font-size: 32px;
+  display: flex;
+}
+
+.progressContainer {
+  width: 100%;
+  margin: 48px 0 0 0;
+  display: grid;
+  grid-template-columns: auto 1fr auto 1fr auto;
+  place-items: center;
+}
+
+.progressContainer span {
+  font-weight: 400;
+}
+
+.progressContainer > .progressBar {
+  background-color: black;
+  height: 4px;
+  width: 56px;
+  margin: auto 8px;
+}
+
+.progressOne, .progressTwo, .progressThree {
+  display: flex;
+}
+
+.progressIcon {
+  width: 24px;
+  color: white;
+  border-radius: 50%;
+  background-color: black;
+  margin: 0 8px 0 0;
+}
+
+.progressIconDefault {
+  width: 24px;
+  color: gainsboro;
+  border: 1px solid gainsboro;
+  border-radius: 50%;
+  margin: 0 8px 0 0;
+}
+
+.progressIconDefault ~ .default {
+  color: gainsboro;
+}
+
+.progressContainer > .progressBar::after {
+  background-color: gainsboro;
+  display: block;
+  height: 4px;
+  z-index: 9;
+  content: '';
+}
