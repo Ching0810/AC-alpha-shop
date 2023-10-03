@@ -1,7 +1,31 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 50%;
+}
+
+.cartContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 40%
+}
+
+.plain {
+  display: flex;
+  flex: 1;
+}
+
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
+  width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 1rem;
   text-align: center;
 }
 

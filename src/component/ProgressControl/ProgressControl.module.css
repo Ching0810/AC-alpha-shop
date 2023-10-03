@@ -32,10 +32,12 @@
 
 .progressOne, .progressTwo, .progressThree {
   display: flex;
+  align-items: center;
 }
 
 .progressIcon {
   width: 24px;
+  height: 24px;
   color: white;
   border-radius: 50%;
   background-color: black;
@@ -44,6 +46,7 @@
 
 .progressIconDefault {
   width: 24px;
+  height: 24px;
   color: gainsboro;
   border: 1px solid gainsboro;
   border-radius: 50%;

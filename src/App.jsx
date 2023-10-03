@@ -1,15 +1,19 @@
-import { ProgressControl } from './component/ProgressControl/ProgressControl.jsx'
-import { StepOne } from './component/StepOne/StepOne.jsx'
-import { StepProgress } from './component/StepProgress/StepProgress.jsx'
+import Form from './component/Form/Form.jsx'
+import Cart from './component/Cart/Cart.jsx'
 import './App.css'
 
 function App() {
-
   return (
     <>
-      <ProgressControl />
-      <StepOne />
-      <StepProgress />
+      <div className='container'>
+        <div className='formContainer'>
+          <Form />
+        </div>
+        <div className='cartContainer'>
+          <div className='plain'></div>
+          <Cart />
+        </div>
+      </div>
     </>
   )
 }
