@@ -3,7 +3,9 @@
 This is a very first React project from Alpha camp.
 There will be a series of stage to achieve expected standard, so I'll keep updating version including further function like new page, component, logic, etc.
 
-The image below shows current result (20230928):
+The image below shows current result (20231003):
+
+Previous result (20230928):
 
 <img width="389" alt="Alpha-shop-stage1-20230928" src="https://github.com/Ching0810/AC-alpha-shop/assets/135832590/f8d86648-f542-4efe-9383-9c5f5115409c">
 
