@@ -1,7 +1,7 @@
 # AC-alpha shop project
 
 This is a very first React project from Alpha camp.
-There will be a series of stage to achieve expected standard, so I'll keep updating version including further function like new page, component, logic, etc.
+There will be a series of stage to achieve expected standard, so I'll keep updating nowadays version including further function like new page, component, logic, etc.
 
 The image below shows current result (20231003):
 
