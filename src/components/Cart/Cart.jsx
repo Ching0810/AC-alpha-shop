@@ -1,5 +1,5 @@
 import style from './Cart.module.css'
-import { data } from './data.jsx'
+import { data } from './data.js'
 import plus from '../../assets/icons/plus.svg'
 import minus from '../../assets/icons/minus.svg'
 

@@ -1,7 +1,7 @@
 // import complete from '../../assets/icons/pg-complete.svg'
 import style from './ProgressControl.module.css'
 
-export function ProgressControl () {
+export default function ProgressControl () {
   return (
     <div className={style.container}>
       <div className={style.title}>結帳</div>
