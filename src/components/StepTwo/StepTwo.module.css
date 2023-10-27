@@ -1,0 +1,32 @@
+.container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 64px 0 0 0;
+}
+
+.title {
+  width: 1;
+  font-weight: 700;
+  font-size: 24px;
+  display: flex;
+}
+
+.option {
+  margin: 25px 0;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-gap: 15px;
+  text-align: left;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #ece8e8;
+}
+
+.checked {
+  border: 1px solid black;
+}
+
+.methodName, .cost {
+  font-weight: bolder;
+}

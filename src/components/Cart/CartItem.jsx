@@ -3,8 +3,8 @@ import style from './Cart.module.css'
 
 CartItem.propTypes = {
   data: PropTypes.object.isRequired,
-  plus: PropTypes.func.isRequired,
-  minus: PropTypes.func.isRequired,
+  plus: PropTypes.string.isRequired,
+  minus: PropTypes.string.isRequired,
 };
 
 export default function CartItem ( { data, plus, minus } ) {

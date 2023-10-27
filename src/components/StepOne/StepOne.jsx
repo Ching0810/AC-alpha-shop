@@ -32,8 +32,8 @@ export default function StepOne () {
         <div className={style.formRowContainerThree}>
           <div className={style.inputContainer}>
             <div className={style.inputLabel}>縣市</div>
-            <select className={style.inputSelect} required>
-              <option value>請選擇縣市</option>
+            <select className={style.inputSelect} defaultValue="defaultOption" required>
+              <option value="defaultOption">請選擇縣市</option>
               <option value="KLU">基隆市</option>
               <option value="TPH">新北市</option>
               <option value="TPE">臺北市</option>
