@@ -1,0 +1,45 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 64px 0 0 0;
+  height: 400px;
+}
+
+.title {
+  width: 1;
+  font-weight: 700;
+  font-size: 24px;
+  display: flex;
+}
+
+.formContainer {
+  margin: 15px 0;
+  width: 100%;
+}
+
+.formRowContainer {
+  margin: 15px 0;
+  width: 70%;
+  font-size: 15px;
+}
+
+.formRowContainer.twoInput {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 4vw;
+  width: 100%;
+}
+
+.inputContainer {
+  text-align: left;
+}
+
+.input {
+  box-sizing: border-box;
+  border: 1px solid #847e7e;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  font-size: 15px;
+}
