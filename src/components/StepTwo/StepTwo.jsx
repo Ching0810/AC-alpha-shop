@@ -1,19 +1,32 @@
 import style from './StepTwo.module.css'
 import Option from './Option.jsx'
 import { data } from './data.js'
-import { useState } from 'react'
+import PropTypes from 'prop-types';
 
-export default function StepTwo() {
-  const [isChecked, setIsChecked] = useState('1')
+StepTwo.propTypes = {
+  step: PropTypes.string.isRequired,
+  shipOption: PropTypes.string.isRequired,
+  setShipOption: PropTypes.func.isRequired,
+};
+
+export default function StepTwo({ shipOption, setShipOption }) {
   function handleClick(e) {
-    setIsChecked(e.target.value)
+    setShipOption(e.target.value)
   }
   return (
     <div className={style.container}>
       <div className={style.title}>運送方式</div>
       <div className={style.checkbox}>
         {data.map(item =>
-          <Option isChecked={isChecked} key={item.id} value={item.id} handleClick={handleClick} method={item.method} duration={item.duration} cost={item.cost}/>
+          <Option 
+            isChecked={shipOption === item.id } 
+            key={item.id} 
+            value={item.id} 
+            handleClick={handleClick} 
+            method={item.method} 
+            duration={item.duration} 
+            cost={item.cost}
+          />
         )}
       </div>
     </div>

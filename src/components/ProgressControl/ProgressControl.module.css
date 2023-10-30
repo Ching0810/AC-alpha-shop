@@ -26,41 +26,56 @@
 .progressContainer > .progressBar {
   background-color: black;
   height: 4px;
-  width: 56px;
+  width: 7vw;
   margin: auto 8px;
 }
 
+.progressContainer>.progressBar.default {
+  background-color: gainsboro;
+}
+
 .progressOne, .progressTwo, .progressThree {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
 }
 
 .progressIcon {
-  width: 24px;
-  height: 24px;
-  color: white;
-  border-radius: 50%;
-  background-color: black;
-  margin: 0 8px 0 0;
-}
-
-.progressIconDefault {
-  width: 24px;
-  height: 24px;
+  width: 2.1vw;
+  height: 2.1vw;
   color: gainsboro;
+  border-radius: 50%;
   border: 1px solid gainsboro;
-  border-radius: 50%;
   margin: 0 8px 0 0;
+  position: relative;
 }
 
-.progressIconDefault ~ .default {
+.progressStep {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+span {
+  font-size: 1.5vw;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+span.default {
   color: gainsboro;
 }
 
-.progressContainer > .progressBar::after {
-  background-color: gainsboro;
-  display: block;
-  height: 4px;
-  z-index: 9;
-  content: '';
+.progressIcon.default {
+  background-color: white;
+}
+
+.completeImg {
+  all: unset;
+  width: 100%;
+  position: absolute;
+  left: 0;
 }
