@@ -3,18 +3,17 @@
 This is a very first React project from Alpha camp.
 There will be a series of stage to achieve expected standard, so I'll keep updating nowadays version including further function like new page, component, logic, etc.
 
-Latest progress (20231029):
+Latest progress (20231030):
 <br/>
-Finished StepTwo, StepThree component, and add total cost function inside Cart component.
+<img width="389" alt="Alpha-shop-stage1-20230928" src="/src/assets/screenshot/Alpha-shop-M5-2.png">
+<img width="389" alt="Alpha-shop-stage1-20230928" src="/src/assets/screenshot/Alpha-shop-M5-1.png">
 
-The image below shows current result (20231003):
-
-<img width="750" alt="Alpha-shop-stage1-20231003" src="https://github.com/Ching0810/AC-alpha-shop/blob/main/src/assets/screenshot/Alpha-shop-stage1-20231003.png?raw=true">
-
-
-Previous result (20230928):
-
+Result history:
+(20230928)
 <img width="389" alt="Alpha-shop-stage1-20230928" src="https://github.com/Ching0810/AC-alpha-shop/assets/135832590/f8d86648-f542-4efe-9383-9c5f5115409c">
+
+(20231003)
+<img width="750" alt="Alpha-shop-stage1-20231003" src="https://github.com/Ching0810/AC-alpha-shop/blob/main/src/assets/screenshot/Alpha-shop-stage1-20231003.png?raw=true">
 
 
 # Prerequisites
