@@ -5,14 +5,17 @@ There will be a series of stage to achieve expected standard, so I'll keep updat
 
 Latest progress (20231030):
 <br/>
-<img width="389" alt="Alpha-shop-stage1-20230928" src="/src/assets/screenshot/Alpha-shop-M5-2.png">
+Finished Form components with step page toggle function and Cart component with total cost function.
 <br/>
-<img width="389" alt="Alpha-shop-stage1-20230928" src="/src/assets/screenshot/Alpha-shop-M5-1.png">
+<img width="400" alt="Alpha-shop-stage1-20230928" src="/src/assets/screenshot/Alpha-shop-M5-2.png">
+<br/>
+<img width="400" alt="Alpha-shop-stage1-20230928" src="/src/assets/screenshot/Alpha-shop-M5-1.png">
+
 
 Result history:
-
 (20231003)
-<img width="750" alt="Alpha-shop-stage1-20231003" src="https://github.com/Ching0810/AC-alpha-shop/blob/main/src/assets/screenshot/Alpha-shop-stage1-20231003.png?raw=true">
+<br/>
+<img width="400" alt="Alpha-shop-stage1-20231003" src="https://github.com/Ching0810/AC-alpha-shop/blob/main/src/assets/screenshot/Alpha-shop-stage1-20231003.png?raw=true">
 
 (20230928)
 <br/>
