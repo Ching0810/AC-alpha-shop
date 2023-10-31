@@ -4,7 +4,6 @@ import { data } from './data.js'
 import PropTypes from 'prop-types';
 
 StepTwo.propTypes = {
-  step: PropTypes.string.isRequired,
   shipOption: PropTypes.string.isRequired,
   setShipOption: PropTypes.func.isRequired,
 };

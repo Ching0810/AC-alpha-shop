@@ -25,14 +25,12 @@ export default function Form () {
     }
   }
 
-  let StepComponent;
-  if (step === 'one') {
-    StepComponent = StepOne;
-  } else if (step === 'two') {
-    StepComponent = StepTwo;
-  } else {
-    StepComponent = StepThree;
+  const stepComponents = {
+    'one': StepOne,
+    'two': StepTwo,
+    'three': StepThree
   }
+  let StepComponent = stepComponents[step]
 
   return (
     <>
