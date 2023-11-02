@@ -3,11 +3,14 @@ import StepOne from '../StepOne/StepOne.jsx'
 import StepTwo from '../StepTwo/StepTwo.jsx'
 import StepThree from '../StepThree/StepThree.jsx'
 import StepProgress from '../StepProgress/StepProgress.jsx'
-import { useState } from 'react'
+import { useContext, useState } from 'react'
+import { FormExportContext } from '../../FormExportContext.js'
 
 export default function Form () {
   const [ step, setStep ] = useState('one')
   const [ shipOption, setShipOption ] = useState('1')
+  // const [ formData, setFormData ] = useState({})
+  const {formData} = useContext(FormExportContext)
 
   function handlePrevClick() {
     if (step === 'two') {
@@ -25,6 +28,17 @@ export default function Form () {
     }
   }
 
+  function handleConfirmCLick() {
+    let totalCost = (formData[1] || 0) + (formData[2] || 0);
+    const exportData = {
+      totalCost,
+      ...formData
+    };
+    delete exportData[1];
+    delete exportData[2];
+    console.log(exportData);
+  }
+
   const stepComponents = {
     'one': StepOne,
     'two': StepTwo,
@@ -34,9 +48,11 @@ export default function Form () {
 
   return (
     <>
-      <ProgressControl step={step}/>
-      <StepComponent shipOption={shipOption} setShipOption={setShipOption}/>
-      <StepProgress step={step} onNextClick={ handleNextClick } onPrevClick={ handlePrevClick } />
+      {/* <FormExportContext.Provider value={{formData, setFormData}}> */}
+        <ProgressControl step={step}/>
+        <StepComponent shipOption={shipOption} setShipOption={setShipOption}/>
+        <StepProgress step={step} onNextClick={ handleNextClick } onPrevClick={ handlePrevClick } onConfirmClick={ handleConfirmCLick }/>
+      {/* </FormExportContext.Provider> */}
     </>
   )
 }

@@ -7,9 +7,10 @@ StepProgress.propTypes = {
   step: PropTypes.string.isRequired,
   onNextClick: PropTypes.func.isRequired,
   onPrevClick: PropTypes.func.isRequired,
+  onConfirmClick: PropTypes.func.isRequired,
 };
 
-export default function StepProgress ({ step, onNextClick, onPrevClick }) {
+export default function StepProgress ({ step, onNextClick, onPrevClick, onConfirmClick }) {
   return (
     <div className={style.container}>
       <div className={style.stepContainer}>
@@ -19,7 +20,7 @@ export default function StepProgress ({ step, onNextClick, onPrevClick }) {
             上一步
           </button>
         )}
-        <button className={style.buttonNext} onClick={ onNextClick }>
+        <button className={style.buttonNext} onClick={ !(step==='three')?onNextClick:onConfirmClick }>
           {!(step === 'three')?'下一步':'確認下單'}
           <img src={rightArrow} alt="" />
         </button>
