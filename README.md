@@ -3,16 +3,20 @@
 This is a very first React project from Alpha camp.
 There will be a series of stage to achieve expected standard, so I'll keep updating nowadays version including further function like new page, component, logic, etc.
 
-Latest progress (20231030):
+Latest progress (20231103):
+Finished form data & product total cost export function with useContext hook.
+<br/>
+<img width="600" alt="Alpha-shop-stage4" src="/src/assets/screenshot/Alpha-shop-M6.png">
+
+Result history:
+(20231030)
 <br/>
 Finished Form components with step page toggle function and Cart component with total cost function.
 <br/>
-<img width="400" alt="Alpha-shop-stage1-20230928" src="/src/assets/screenshot/Alpha-shop-M5-2.png">
+<img width="400" alt="Alpha-shop-stage3" src="/src/assets/screenshot/Alpha-shop-M5-2.png">
 <br/>
-<img width="400" alt="Alpha-shop-stage1-20230928" src="/src/assets/screenshot/Alpha-shop-M5-1.png">
+<img width="400" alt="Alpha-shop-stage3" src="/src/assets/screenshot/Alpha-shop-M5-1.png">
 
-
-Result history:
 (20231003)
 <br/>
 <img width="400" alt="Alpha-shop-stage1-20231003" src="https://github.com/Ching0810/AC-alpha-shop/blob/main/src/assets/screenshot/Alpha-shop-stage1-20231003.png?raw=true">

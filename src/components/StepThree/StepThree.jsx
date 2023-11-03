@@ -53,7 +53,7 @@ export default function StepThree() {
         <div className={style.formRowContainer}>
           <label className={style.inputContainer}>
             <div>卡號</div>
-            <input className={style.input} type='text' placeholder='1111 2222 3333 4444' maxLength={19} value={cardNumber} onChange={handleCardChange}/>
+            <input className={style.input} type='text' placeholder='1111 2222 3333 4444' maxLength={16} value={cardNumber} onChange={handleCardChange}/>
           </label>
         </div>
         <div className={`${style.formRowContainer} ${style.twoInput}`}>
