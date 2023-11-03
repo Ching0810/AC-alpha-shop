@@ -13,6 +13,7 @@ CartItem.propTypes = {
 
 export default function CartItem ( { data, plusImg, minusImg, setTotalCost, calculateTotalCost } ) {
   const [count, setCount] = useState(0)
+  // the { , } syntax is "object destructuring", therefore the variable name need to be exactly as same as definition from context provider
   const {formData, setFormData} = useContext(FormExportContext)
   function handleMinusClick() {
     if (count > 0) {
