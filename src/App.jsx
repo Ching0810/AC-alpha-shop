@@ -6,15 +6,15 @@ import './App.css'
 function App() {
   return (
     <div className='container'>
-        <ContextProvider>
-          <div className='formContainer'>
-            <Form />
-          </div>
-          <div className='cartContainer'>
-            <div className='plain'></div>
-            <Cart />
-          </div>
-        </ContextProvider>
+      <ContextProvider>
+        <div className='formContainer'>
+          <Form />
+        </div>
+        <div className='cartContainer'>
+          <div className='plain'></div>
+          <Cart />
+        </div>
+      </ContextProvider>
     </div>
   )
 }
