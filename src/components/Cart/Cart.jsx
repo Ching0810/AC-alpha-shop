@@ -3,10 +3,10 @@ import CartItem from './CartItem.jsx'
 import plus from '../../assets/icons/plus.svg'
 import minus from '../../assets/icons/minus.svg'
 import { useState, useContext } from 'react'
-import { CartContext } from './CartContext.js'
+import { CartDataContext } from '../../FormExportContext.js'
 
 export default function Cart () {
-  const cartData = useContext(CartContext)
+  const cartData = useContext(CartDataContext)
 
   const [totalCost, setTotalCost] = useState({})
   function calculateTotalCost(count, data) {
