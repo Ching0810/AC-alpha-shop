@@ -3,9 +3,13 @@
 This is a very first React project from Alpha camp.
 There will be a series of stage to achieve expected standard, so I'll keep updating nowadays version including further function like new page, component, logic, etc.
 
+Live link: https://delicate-moxie-ffbb63.netlify.app/
+
 Latest progress (20231103):
 <br/>
 Finished form data & product total cost export function with useContext hook.
+<br/>
+Optimization: extract context porvider as single component (ContextProvider.jsx)
 <br/>
 <img width="1000" alt="Alpha-shop-stage4" src="/src/assets/screenshot/Alpha-shop-M6.png">
 
